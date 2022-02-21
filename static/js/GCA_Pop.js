@@ -56,10 +56,6 @@ var viz = L.geoJson(dataGCA, {
                             '<td>'+ proj_n +'</td>'+
                         '</tr>'+
                         '<tr>'+
-                            '<td>'+ "Total Budget" +'</td>'+
-                            '<td>'+ T_Budget+'</td>'+
-                        '</tr>'+
-                        '<tr>'+
                             '<td>'+ "Total Community Workers Supporting the Project" +'</td>'+
                             '<td>'+ C_W_S_P +'</td>'+
                         '</tr>'+
