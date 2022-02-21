@@ -14,13 +14,15 @@
 
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet"/>
 
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
 
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 
   </head>
   <body>
@@ -76,7 +78,7 @@
           <div class="row mb-2">
             
             <!--Main Dashboard Cards & Heading Area-->
-            <div class=" col-5 ">
+            <div class=" col-6 ">
               <!--Main Dashboard Welcome Headings-->
               <div class=" "> 
                 <h1 class="text-primary">SUNDARBAN AREABASED PROGRAMME <i>an initiative of</i> UNDP</h1>
@@ -85,7 +87,7 @@
               <!--Main Dashboard Cards-->
               <div class="row p-0">
                 <div class="container ">
-                  <div class="row  g-1">
+                  <div class="row m-1 g-1">
                     <div class="col-6" >
                       <div class="">
                         <div class="card bg-light shadow" >
@@ -119,7 +121,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row g-1">
+                  <div class="row m-1 g-1">
                     <div class="col-6">
                       <div class="">
                         <div class="card bg-light shadow">
@@ -153,7 +155,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row g-1">
+                  <div class="row m-1 g-1">
                     <div class="col-6">
                       <div class="">
                         <div class="card bg-light shadow">
@@ -187,7 +189,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row g-1">
+                  <div class="row m-1 g-1">
                     <div class="col-6">
                       <div class="">
                         <div class="card bg-light shadow">
@@ -221,7 +223,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row g-1">
+                  <div class="row m-1 g-1">
                     <div class="col-6">
                       <div class="">
                         <div class="card bg-light shadow">
@@ -239,23 +241,32 @@
                       </div>
                     </div>
                   </div>
+                  
+                  
                 </div>
               </div>
             </div>
 
             <!--Main Dashboard Map Area-->
-            <div class=" col-7 ">
-              <!--Map Area-->
-              <div class=" " id=" ">
-                <!-- MainMap -->
-                <div class="mt-1 p-2" id=""> 
-                  <div id = "mainmap" style = "width: 100%; height: 600px"></div>
-                    
-                </div>
-             </div>
+            <div class=" col-6 ">
+             <!-- MainMap -->
+              <div class="mt-1 p-2" id=""> 
+                <div id = "mainmap" style = "width: 100%; height:620px"></div>
+              </div>
             </div>
           </div>
-        
+
+          <!--Graph Area-->
+          <hr>
+          <div class="row" style="height: 250px;">
+            <div class="col-4" id="collumnchart" style=" "></div>
+            <div class="col-4" id="donutchart" style=" "></div>
+            <div class="col-4" id="columnchart_material" style=" "></div>
+            
+          </div>
+          <hr>
+
+
         <!-- About Sundarban Group -->
         <div class="mt-2 mb-3 " id="index_about">
           <!-- About Sundarban Group Heading -->
@@ -352,226 +363,602 @@
           </div>
         </div>
 
-        <!-- OnGoing Project Crads Area-->  
+        <!-- OnGoing Project Crads Area--> 
         <div class=" " id="Dashboard">
           <!-- Ongoing Projects Heading -->
           <div class=" text-center rounded-3 mt-2 p-1 mb-2 bg-primary text-white shadow  ">
             <h3 class=" ">SUNDARBAN AREABASED PROGRAMME ONGOING PROJECTS </h3>
           </div>
-
-          <!-- Projects Cards Dashboard Area-->
           
-          <!--1st ******* Projects Cards Dashboard Area-->
-          <div class=" shadow ">
+          <!-- Tabs navs -->
+          <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="ex1-tab-1" data-mdb-toggle="tab" href="#ex1-tabs-1" role="tab" aria-controls="ex1-tabs-1" aria-selected="true">
+                GCA
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="ex1-tab-2" data-mdb-toggle="tab" href="#ex1-tabs-2" role="tab" aria-controls="ex1-tabs-2" aria-selected="false">
+                LoGIC
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="ex1-tab-3" data-mdb-toggle="tab" href="#ex1-tabs-3" role="tab" aria-controls="ex1-tabs-2" aria-selected="false">
+                Tab 3
+              </a>
+            </li>
             
-            <div class="card w-100 bg-light" >
-              <div class="card-body row">
-                <!--Cards Dashboard Area-->
-                <div class="col-8">
-                  <div class=" ">
-                    <h5 class="card-title mt-1 p-1 text-primary">
-                      Card title
-                    </h5>
-                                
-                    <p class="card-text mb-0">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting 
-                      industry. Lorem Ipsum has been the industry's standard dummy text 
-                      ever since the 1500s, when an unknown printer took a galley of type
-                      and scrambled it to make a type specimen book. It has survived not 
-                      only five centuries, but also the leap into electronic typesetting,
-                      remaining essentially unchanged. It was popularised in the 1960s 
-                      with the release of Letraset sheets containing Lorem Ipsum passages, 
-                      and more recently with desktop publishing software like Aldus PageMaker
-                      including versions of Lorem Ipsum.
-                      
-                    </p>
-                    <div class="text-end">
-                      <button class="btn btn-secondary btn-sm shadow-sm" id=" " type="button" role=" ">
-                        <a class="text-white" href="GCA.html">
-                          Read More >>
-                        </a>
-                      </button>
-                    </div>
-                    
-                  </div>
+          </ul>
+          <!-- Tabs navs -->
 
-                  <!-- Project Cards-->
-                  <div class="row ">
-                    <div class="col-9 p-1 m-1">
-                      <div class="row p-0">
-                        <div class="container ">
-                          <div class="row g-1">
-                            <div class="col-6" >
-                              <div class="">
-                                <div class="card bg-light shadow" >
-                                  <div class="row g-0 p-1">
-                                    <div class="col-md-8 ">
-                                      <img src="static/img/2.svg" class="img-fluid " alt="...">
-                                    </div>
-                                    <div class="col-md-4">
-                                      <div class="row card-body">
-                                        <h6 class="card-text">Card </h6>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-6">
-                              <div class="">
-                                <div class="card bg-light shadow">
-                                  <div class="row g-0 p-1">
-                                    <div class="col-md-8 ">
-                                      <img src="static/img/3.svg" class="img-fluid " alt="...">
-                                    </div>
-                                    <div class="col-md-4">
-                                      <div class="row card-body">
-                                        <h6 class="card-text">Card </h6>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row g-1">
-                            <div class="col-6">
-                              <div class="">
-                                <div class="card bg-light shadow">
-                                  <div class="row g-0 p-1">
-                                    <div class="col-md-8 ">
-                                      <img src="static/img/4.svg" class="img-fluid " alt="...">
-                                    </div>
-                                    <div class="col-md-4">
-                                      <div class="row card-body">
-                                        <h6 class="card-text">Card </h6>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-6">
-                              <div class="">
-                                <div class="card bg-light shadow">
-                                  <div class="row g-0 p-1">
-                                    <div class="col-md-8 ">
-                                      <img src="static/img/5.svg" class="img-fluid " alt="...">
-                                    </div>
-                                    <div class="col-md-4">
-                                      <div class="row card-body">
-                                        <h6 class="card-text">Card </h6>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row g-1">
-                            <div class="col-6">
-                              <div class="">
-                                <div class="card bg-light shadow">
-                                  <div class="row g-0 p-1">
-                                    <div class="col-md-8 ">
-                                      <img src="static/img/6.svg" class="img-fluid " alt="...">
-                                    </div>
-                                    <div class="col-md-4">
-                                      <div class="row card-body">
-                                        <h6 class="card-text">Card </h6>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-6">
-                              <div class="">
-                                <div class="card bg-light shadow">
-                                  <div class="row g-0 p-1">
-                                    <div class="col-md-8 ">
-                                      <img src="static/img/7.svg" class="img-fluid " alt="...">
-                                    </div>
-                                    <div class="col-md-4">
-                                      <div class="row card-body">
-                                        <h6 class="card-text">Card </h6>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row g-1">
-                            <div class="col-6">
-                              <div class="">
-                                <div class="card bg-light shadow">
-                                  <div class="row g-0 p-1">
-                                    <div class="col-md-8 ">
-                                      <img src="static/img/8.svg" class="img-fluid " alt="...">
-                                    </div>
-                                    <div class="col-md-4">
-                                      <div class="row card-body">
-                                        <h6 class="card-text">Card </h6>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-6">
-                              <div class="">
-                                <div class="card bg-light shadow">
-                                  <div class="row g-0 p-1">
-                                    <div class="col-md-8 ">
-                                      <img src="static/img/9.svg" class="img-fluid " alt="...">
-                                    </div>
-                                    <div class="col-md-4">
-                                      <div class="row card-body">
-                                        <h6 class="card-text">Card </h6>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+          <!-- Tabs content -->
+          <div class="tab-content" id="ex1-content">
+            <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+              <!--1st ******* Projects Cards Dashboard Area-->
+              <div class=" shadow ">
+                
+                <div class="card w-100 bg-light" id="index-gca-card" >
+                  <div class="card-body row">
+                    
+                      <!--Cards Dashboard Area-->
+                      <div class="col-6">
+                        <div class=" ">
+                          <h5 class="card-title mt-1 p-1 text-primary">
+                            Gender-responsive Coastal Adaptation
+                          </h5>
                         </div>
+
+                        <!-- Project Cards-->
+                        <div class="row ">
+                          <div class=" ">
+                            <div class="row p-0">
+                              <div class="container ">
+                                <div class="row g-1 p-1">
+                                  <div class="col-6" >
+                                    <div class="">
+                                      <div class="card bg-light shadow" >
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/2.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <div class="">
+                                      <div class="card bg-light shadow">
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/3.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row g-1 p-1">
+                                  <div class="col-6">
+                                    <div class="">
+                                      <div class="card bg-light shadow">
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/4.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <div class="">
+                                      <div class="card bg-light shadow">
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/5.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row g-1 p-1">
+                                  <div class="col-6">
+                                    <div class="">
+                                      <div class="card bg-light shadow">
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/6.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <div class="">
+                                      <div class="card bg-light shadow">
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/7.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row g-1 p-1">
+                                  <div class="col-6">
+                                    <div class="">
+                                      <div class="card bg-light shadow">
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/8.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <div class="">
+                                      <div class="card bg-light shadow">
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/9.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+
+                      </div> 
+                      <!-- Card Map Area-->
+                      <div class="col-6 border border-secondary rounded-1 " id="mapGCA">
+                        <div class="">
+                          <!-- MainMap -->
+                          <div class=" " id=""> 
+                            
+                          </div>
+                        </div>                      
                       </div>
-                    </div>
+                      <div class="text-end">
+                        <button class="row mt-2 btn btn-secondary btn-sm shadow-sm" id=" " type="button" role=" ">
+                          <a class="text-white" href="GCA.html">
+                            Read More >>
+                          </a>
+                        </button>
+                      </div>
+                  
+                    
                     
                   </div>
-
                 </div>
 
-               
 
-                <!-- Card Map Area-->
-                
-                <div class="col-4 border border-secondary rounded-1 " id="mapGCA">
-                  <div class="">
-                    <!-- MainMap -->
-                    <div class=" " id=""> 
-                      
-                    </div>
-                  </div>                      
-                </div>
-                
-                
               </div>
             </div>
+            <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+              <!--2nd ******* Projects Cards Dashboard Area-->
+              <div class=" shadow ">
+                
+                <div class="card w-100 bg-light" id="index-gca-card" >
+                  <div class="card-body row">
+                    
+                      <!--Cards Dashboard Area-->
+                      <div class="col-6">
+                        <div class=" ">
+                          <h5 class="card-title mt-1 p-1 text-primary">
+                            Gender-responsive Coastal Adaptation
+                          </h5>
+                        </div>
+
+                        <!-- Project Cards-->
+                        <div class="row ">
+                          <div class=" ">
+                            <div class="row p-0">
+                              <div class="container ">
+                                <div class="row g-1 p-1">
+                                  <div class="col-6" >
+                                    <div class="">
+                                      <div class="card bg-light shadow" >
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/2.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <div class="">
+                                      <div class="card bg-light shadow">
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/3.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row g-1 p-1">
+                                  <div class="col-6">
+                                    <div class="">
+                                      <div class="card bg-light shadow">
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/4.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <div class="">
+                                      <div class="card bg-light shadow">
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/5.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row g-1 p-1">
+                                  <div class="col-6">
+                                    <div class="">
+                                      <div class="card bg-light shadow">
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/6.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <div class="">
+                                      <div class="card bg-light shadow">
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/7.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row g-1 p-1">
+                                  <div class="col-6">
+                                    <div class="">
+                                      <div class="card bg-light shadow">
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/8.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <div class="">
+                                      <div class="card bg-light shadow">
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/9.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+
+                      </div> 
+                      <!-- Card Map Area-->
+                      <div class="col-6 border border-secondary rounded-1 " id="mapGCA">
+                        <div class="">
+                          <!-- MainMap -->
+                          <div class=" " id=""> 
+                            
+                          </div>
+                        </div>                      
+                      </div>
+                      <div class="text-end">
+                        <button class="row mt-2 btn btn-secondary btn-sm shadow-sm" id=" " type="button" role=" ">
+                          <a class="text-white" href="GCA.html">
+                            Read More >>
+                          </a>
+                        </button>
+                      </div>
+                  
+                    
+                    
+                  </div>
+                </div>
 
 
-          </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+              <!--3rd ******* Projects Cards Dashboard Area-->
+              <div class=" shadow ">
+                
+                <div class="card w-100 bg-light" id="index-gca-card" >
+                  <div class="card-body row">
+                    
+                      <!--Cards Dashboard Area-->
+                      <div class="col-6">
+                        <div class=" ">
+                          <h5 class="card-title mt-1 p-1 text-primary">
+                            Gender-responsive Coastal Adaptation
+                          </h5>
+                        </div>
 
-          <!--2nd ******* Projects Cards Dashboard Area-->
-          
+                        <!-- Project Cards-->
+                        <div class="row ">
+                          <div class=" ">
+                            <div class="row p-0">
+                              <div class="container ">
+                                <div class="row g-1 p-1">
+                                  <div class="col-6" >
+                                    <div class="">
+                                      <div class="card bg-light shadow" >
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/2.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <div class="">
+                                      <div class="card bg-light shadow">
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/3.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row g-1 p-1">
+                                  <div class="col-6">
+                                    <div class="">
+                                      <div class="card bg-light shadow">
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/4.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <div class="">
+                                      <div class="card bg-light shadow">
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/5.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row g-1 p-1">
+                                  <div class="col-6">
+                                    <div class="">
+                                      <div class="card bg-light shadow">
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/6.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <div class="">
+                                      <div class="card bg-light shadow">
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/7.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row g-1 p-1">
+                                  <div class="col-6">
+                                    <div class="">
+                                      <div class="card bg-light shadow">
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/8.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <div class="">
+                                      <div class="card bg-light shadow">
+                                        <div class="row g-0 p-1">
+                                          <div class="col-md-8 ">
+                                            <img src="static/img/9.svg" class="img-fluid " alt="...">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <div class="row card-body">
+                                              <h6 class="card-text">Card </h6>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
 
-          <!--3rd ******* Projects Cards Dashboard Area-->
-          
-          
+                      </div> 
+                      <!-- Card Map Area-->
+                      <div class="col-6 border border-secondary rounded-1 " id="mapGCA">
+                        <div class="">
+                          <!-- MainMap -->
+                          <div class=" " id=""> 
+                            
+                          </div>
+                        </div>                      
+                      </div>
+                      <div class="text-end">
+                        <button class="row mt-2 btn btn-secondary btn-sm shadow-sm" id=" " type="button" role=" ">
+                          <a class="text-white" href="GCA.html">
+                            Read More >>
+                          </a>
+                        </button>
+                      </div>
+                  
+                    
+                    
+                  </div>
+                </div>
 
-        </div>    
+
+              </div>
+            </div>
+            <!-- Tabs content -->
+          </div>    
   
         
       </div>
@@ -606,7 +993,7 @@
             </div>
           </div>
           <!-- Social Media-->
-          <div class=" " id=" ">
+          <div class="pb-3 " id=" ">
             <section class="wow fadeIn bg-gray animated" >
               <div class="container">
                   <div class="row ">
@@ -668,6 +1055,11 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
+
+    <!--Google CHart -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>

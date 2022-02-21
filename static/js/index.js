@@ -25,7 +25,6 @@ var viz = L.geoJson(data, {
         var union = feature.properties.Union
         var proj = feature.properties.Projects
         var proj_n = feature.properties.Projects_N
-        var T_Budget = feature.properties.T_Budget
         var C_W_S_P = feature.properties.C_W_S_P
         var LGI_s = feature.properties.LGI_s
         var T_P_Beneficiary = feature.properties.T_P_Beneficiary
@@ -56,10 +55,6 @@ var viz = L.geoJson(data, {
                             '<td>'+ proj_n +'</td>'+
                         '</tr>'+
                         '<tr>'+
-                            '<td>'+ "Total Budget" +'</td>'+
-                            '<td>'+ T_Budget+'</td>'+
-                        '</tr>'+
-                        '<tr>'+
                             '<td>'+ "Total Community Workers Supporting the Project" +'</td>'+
                             '<td>'+ C_W_S_P +'</td>'+
                         '</tr>'+
@@ -82,3 +77,61 @@ var viz = L.geoJson(data, {
         );
     } 
 }).addTo(mainmap);
+
+
+// 
+
+      google.charts.load('current', {packages:["corechart", "bar"]});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Projects', 'Primary', 'Secondary'],
+          ['GCA', 1000, 400],
+          ['LoGIC', 1170, 460],
+          ['EALG', 660, 1120],
+          ['SIDA', 1030, 540]
+        ]);
+        var datapichart = google.visualization.arrayToDataTable([
+            ['Project Name', '% in UNDP Budget'],
+            ['GCA',     11],
+            ['LoGIC',      2],
+            ['EALG',  2],
+            ['SIDA', 2],
+            ['LIUPCP',    7]
+          ]);
+        var datacollumn = google.visualization.arrayToDataTable([
+            ['Gender', 'Number in Lakhs', { role: 'style' } ],
+            ['Female', 10, 'color: gray'],
+            ['Male', 4, 'color: #76A7FA'],
+        
+        ]);  
+        
+
+        var options = {
+          chart: {
+            title: 'Projects Beneficiary',
+            
+          }
+        };
+
+        var optionspichart={
+            title: 'Project Budget in %',
+            pieHole: 0.4,
+        };
+        
+        var optionscollumn = {
+            title: 'Beneficiary of UNDP Projects',
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+
+        var chartpi = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chartpi.draw(datapichart, optionspichart);
+
+        var chartcollumn = new google.visualization.ColumnChart(document.getElementById('collumnchart'));
+        chartcollumn.draw(datacollumn, optionscollumn);
+
+      }
+
