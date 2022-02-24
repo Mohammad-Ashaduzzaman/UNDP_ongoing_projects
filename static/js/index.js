@@ -23,6 +23,7 @@ var viz = L.geoJson(data, {
         var dist = feature.properties.District
         var upz = feature.properties.Upazila
         var union = feature.properties.Union
+        var ward = feature.properties.Ward
         var proj = feature.properties.Projects
         var proj_n = feature.properties.Projects_N
         var C_W_S_P = feature.properties.C_W_S_P
@@ -47,6 +48,10 @@ var viz = L.geoJson(data, {
                             '<td>'+ union +'</td>'+
                         '</tr>'+
                         '<tr>'+
+                            '<td>'+ "Ward" +'</td>'+
+                            '<td>'+ ward +'</td>'+
+                        '</tr>'+
+                        '<tr>'+
                             '<td>'+ "Running Projects Name" +'</td>'+
                             '<td>'+ proj +'</td>'+
                         '</tr>'+
@@ -55,15 +60,15 @@ var viz = L.geoJson(data, {
                             '<td>'+ proj_n +'</td>'+
                         '</tr>'+
                         '<tr>'+
-                            '<td>'+ "Total Community Workers Supporting the Project" +'</td>'+
+                            '<td>'+ "Number of Commettee Mobilized" +'</td>'+
                             '<td>'+ C_W_S_P +'</td>'+
                         '</tr>'+
                         '<tr>'+                    
-                            '<td>'+ "Total LGI's Project is Actively" +'</td>'+
+                            '<td>'+ "Number of Govt. Sector Enagage" +'</td>'+
                             '<td>'+ LGI_s +'</td>'+
                         '</tr>'+
                         '<tr>'+
-                            '<td>'+ "Primary Secondary Beneficiary:" +'</td>'+
+                            '<td>'+ "Total Primary Beneficiary:" +'</td>'+
                             '<td>'+ T_P_Beneficiary +'</td>'+
                         '</tr>'+
                         '<tr>'+
