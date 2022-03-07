@@ -23,60 +23,66 @@
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+    
+    <!-- main custom css -->
+    <link rel="stylesheet" href="static/css/main.css">
+
 
   </head>
   <body>
     <div class="container-fluid ">
       <!--Main Navigation Area-->
-      <div class="">
-        <nav class=" container-fluid navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-body">
-          <div class="container justify-content-evenly">
-            <div class=" ">
-              <a class="navbar-brand" href="#">
-                <img src="static/img/1200px-UNDP_logo.svg.png" alt="" width="60 rem" height="120 rem">
-              </a>
+      <header>
+        <div class="">
+          <nav class=" container-fluid navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-body">
+            <div class="container justify-content-evenly">
+              <div class=" ">
+                <a class="navbar-brand" href="#">
+                  <img src="static/img/1200px-UNDP_logo.svg.png" alt="" width="60 rem" height="120 rem">
+                </a>
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#index_about">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Dashboard">DASHBOARD</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ONGOING PROJECTS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="GCA.html">GCA</a></li>
+                      <li><a class="dropdown-item" href="#">LoGIC</a></li>
+                      <li><a class="dropdown-item" href="#">EALG</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="success.html">SUCCESS STORIES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="event.html">EVENTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACTS</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#index_about">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Dashboard">DASHBOARD</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    ONGOING PROJECTS
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="GCA.html">GCA</a></li>
-                    <li><a class="dropdown-item" href="#">LoGIC</a></li>
-                    <li><a class="dropdown-item" href="#">EALG</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="success.html">SUCCESS STORIES</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="event.html">EVENTS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">CONTACTS</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-  
-  
-  
-      </div> 
+          </nav>
+    
+    
+    
+        </div> 
+      </header>
 
 
       <div class="container ">
@@ -90,7 +96,7 @@
             <div class=" col-6 ">
               <!--Main Dashboard Welcome Headings-->
               <div class=" "> 
-                <h1 class="text-primary">SUNDARBAN AREABASED PROGRAMME <i>an initiative of</i> UNDP</h1>
+                <h1 class="primary-text-color-undp">SUNDARBAN AREABASED PROGRAMME <i>an initiative of</i> UNDP</h1>
                 <h3>ONGOING PROJECTS COVERAGE DASHBOARD</h3>
               </div>
               <!--Main Dashboard Cards-->
@@ -279,7 +285,7 @@
         <!-- About Sundarban Group -->
         <div class="mt-2 mb-3 " id="index_about">
           <!-- About Sundarban Group Heading -->
-          <div class="text-center rounded-3 mt-2 p-3 mb-2 bg-primary text-white shadow  ">
+          <div class="text-center rounded-3 mt-2 p-3 mb-2 bg-primary-color-undp text-white shadow  ">
             <h2 class=" ">SUNDARBAN AREABASED PROGRAMME <i>an initiative of</i>  UNDP</h2>
           </div>
 
@@ -287,7 +293,7 @@
           <div class="card w-100">
             <div class="card-body">
               <!-- 
-                <h5 class="card-title rounded-3 mt-2 p-1 mb-2 bg-primary text-white">Card title</h5>
+                <h5 class="card-title rounded-3 mt-2 p-1 mb-2 bg-primary-color-undp text-white">Card title</h5>
               -->
               <div class="row mb-1">
                 <div class="col-7">
@@ -353,21 +359,7 @@
                 </div>
               </div>
               <!-- About Sundarban Group Read More-->
-              <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                  <h6 class="accordion-header " id="flush-headingOne">
-                    <button class="accordion-button collapsed btn-sm btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      Read More 
-                    </button>
-                  </h6>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                      Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. 
-                      This is the first item's accordion body.
-                    </div>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -375,7 +367,7 @@
         <!-- OnGoing Project Crads Area--> 
         <div class=" " id="Dashboard">
           <!-- Ongoing Projects Heading -->
-          <div class=" text-center rounded-3 mt-2 p-1 mb-2 bg-primary text-white shadow  ">
+          <div class=" text-center rounded-3 mt-2 p-1 mb-2 bg-primary-color-undp text-white shadow  ">
             <h3 class=" ">SUNDARBAN AREABASED PROGRAMME ONGOING PROJECTS </h3>
           </div>
           
@@ -412,7 +404,7 @@
                       <!--Cards Dashboard Area-->
                       <div class="col-6">
                         <div class=" ">
-                          <h5 class="card-title mt-1 p-1 text-primary">
+                          <h5 class="card-title mt-1 p-1 primary-text-color-undp">
                             Gender-responsive Coastal Adaptation
                           </h5>
                         </div>
@@ -600,7 +592,7 @@
                       <!--Cards Dashboard Area-->
                       <div class="col-6">
                         <div class=" ">
-                          <h5 class="card-title mt-1 p-1 text-primary">
+                          <h5 class="card-title mt-1 p-1 primary-text-color-undp">
                             Gender-responsive Coastal Adaptation
                           </h5>
                         </div>
@@ -788,7 +780,7 @@
                       <!--Cards Dashboard Area-->
                       <div class="col-6">
                         <div class=" ">
-                          <h5 class="card-title mt-1 p-1 text-primary">
+                          <h5 class="card-title mt-1 p-1 primary-text-color-undp">
                             Gender-responsive Coastal Adaptation
                           </h5>
                         </div>
@@ -973,7 +965,7 @@
       </div>
 
       <!-- Footer -->
-      <div class="mt-3 bg-primary text-white p-1 pt-3" id=" "> 
+      <div class="mt-3 bg-primary-color-undp text-white p-1 pt-3" id=" "> 
         <div class="container">
           <!-- UNDP logo & Name-->
           <div class="row " id=" ">

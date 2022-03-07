@@ -23,67 +23,432 @@
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+    
+    <!-- main custom css -->
+    <link rel="stylesheet" href="static/css/main.css">
+
 
   </head>
   <body>
     <div class="container-fluid ">
       <!--Main Navigation Area-->
-      <div class="">
-        <nav class=" container-fluid navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-body">
-          <div class="container justify-content-evenly">
-            <div class=" ">
-              <a class="navbar-brand" href="#">
-                <img src="static/img/1200px-UNDP_logo.svg.png" alt="" width="60 rem" height="120 rem">
-              </a>
+      <header>
+        <div class="">
+          <nav class=" container-fluid navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-body">
+            <div class="container justify-content-evenly">
+              <div class=" ">
+                <a class="navbar-brand" href="#">
+                  <img src="static/img/1200px-UNDP_logo.svg.png" alt="" width="60 rem" height="120 rem">
+                </a>
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#index_about">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Dashboard">DASHBOARD</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ONGOING PROJECTS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="GCA.html">GCA</a></li>
+                      <li><a class="dropdown-item" href="#">LoGIC</a></li>
+                      <li><a class="dropdown-item" href="#">EALG</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="success.html">SUCCESS STORIES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="event.html">EVENTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACTS</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#index_about">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Dashboard">DASHBOARD</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    ONGOING PROJECTS
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="GCA.html">GCA</a></li>
-                    <li><a class="dropdown-item" href="#">LoGIC</a></li>
-                    <li><a class="dropdown-item" href="#">EALG</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="success.html">SUCCESS STORIES</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="event.html">EVENTS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">CONTACTS</a>
-                </li>
-              </ul>
+          </nav>
+    
+    
+    
+        </div> 
+      </header>
+
+      <!-- banner image -->
+      <div class="container mb-5">
+        <img src="static/img/success-story.png" class="img-fluid rounded-9" style="" alt="Responsive image">
+      </div>
+
+      <!-- stories -->
+      <div class="container">
+        <div class="container row d-flex m-auto mb-3">
+          <div class="col-4 ">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="static/img/SLD 1.Jpeg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="static/img/SLD 2.Jpeg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="static/img/SLD 3.Jpeg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
-        </nav>
-      </div> 
+          <div class="col-8 card-body m-0 p-1">
+            <h5 class="card-title">Card title</h5>
+            <div class="d-flex">
+              <p class="text-secondary"> 
+                <span class=" "> 07.03.2022 </span> |
+                <span class=" ">Uttarbedkashi, Koyra, Khulna </span> |
+                <span class=" "> Author </span>
+              </p>
+            </div>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+              Et, dolores consequatur neque qui odio est, debitis vel cupiditate quam, dolorum laboriosam corrupti. Porro dolore libero facilis, accusamus sed, ut dicta doloribus officiis accusantium consequatur recusandae iste omnis consequuntur suscipit fugiat delectus quam nemo reprehenderit molestiae blanditiis. Eligendi amet quas officiis dolor!
+            </p>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h6 class="accordion-header " id="flush-headingOne">
+                  <button class="accordion-button collapsed btn-sm btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse01" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Read More 
+                  </button>
+                </h6>
+                <div id="flush-collapse01" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. 
+                    This is the first item's accordion body.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container row d-flex m-auto mb-3">
+          <div class="col-4 ">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="static/img/SLD 1.Jpeg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="static/img/SLD 2.Jpeg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="static/img/SLD 3.Jpeg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-8 card-body m-0 p-1">
+            <h5 class="card-title">Card title</h5>
+            <div class="d-flex">
+              <p class="text-secondary"> 
+                <span class=" "> 07.03.2022 </span> |
+                <span class=" ">Uttarbedkashi, Koyra, Khulna </span> |
+                <span class=" "> Author </span>
+              </p>
+            </div>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+              Et, dolores consequatur neque qui odio est, debitis vel cupiditate quam, dolorum laboriosam corrupti. Porro dolore libero facilis, accusamus sed, ut dicta doloribus officiis accusantium consequatur recusandae iste omnis consequuntur suscipit fugiat delectus quam nemo reprehenderit molestiae blanditiis. Eligendi amet quas officiis dolor!
+            </p>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h6 class="accordion-header " id="flush-headingOne">
+                  <button class="accordion-button collapsed btn-sm btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse02" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Read More 
+                  </button>
+                </h6>
+                <div id="flush-collapse02" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. 
+                    This is the first item's accordion body.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container row d-flex m-auto mb-3">
+          <div class="col-4 ">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="static/img/SLD 1.Jpeg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="static/img/SLD 2.Jpeg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="static/img/SLD 3.Jpeg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-8 card-body m-0 p-1">
+            <h5 class="card-title">Card title</h5>
+            <div class="d-flex">
+              <p class="text-secondary"> 
+                <span class=" "> 07.03.2022 </span> |
+                <span class=" ">Uttarbedkashi, Koyra, Khulna </span> |
+                <span class=" "> Author </span>
+              </p>
+            </div>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+              Et, dolores consequatur neque qui odio est, debitis vel cupiditate quam, dolorum laboriosam corrupti. Porro dolore libero facilis, accusamus sed, ut dicta doloribus officiis accusantium consequatur recusandae iste omnis consequuntur suscipit fugiat delectus quam nemo reprehenderit molestiae blanditiis. Eligendi amet quas officiis dolor!
+            </p>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h6 class="accordion-header " id="flush-headingOne">
+                  <button class="accordion-button collapsed btn-sm btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse03" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Read More 
+                  </button>
+                </h6>
+                <div id="flush-collapse03" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. 
+                    This is the first item's accordion body.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container row d-flex m-auto mb-3">
+          <div class="col-4 ">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="static/img/SLD 1.Jpeg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="static/img/SLD 2.Jpeg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="static/img/SLD 3.Jpeg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-8 card-body m-0 p-1">
+            <h5 class="card-title">Card title</h5>
+            <div class="d-flex">
+              <p class="text-secondary"> 
+                <span class=" "> 07.03.2022 </span> |
+                <span class=" ">Uttarbedkashi, Koyra, Khulna </span> |
+                <span class=" "> Author </span>
+              </p>
+            </div>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+              Et, dolores consequatur neque qui odio est, debitis vel cupiditate quam, dolorum laboriosam corrupti. Porro dolore libero facilis, accusamus sed, ut dicta doloribus officiis accusantium consequatur recusandae iste omnis consequuntur suscipit fugiat delectus quam nemo reprehenderit molestiae blanditiis. Eligendi amet quas officiis dolor!
+            </p>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h6 class="accordion-header " id="flush-headingOne">
+                  <button class="accordion-button collapsed btn-sm btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse04" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Read More 
+                  </button>
+                </h6>
+                <div id="flush-collapse04" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. 
+                    This is the first item's accordion body.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container row d-flex m-auto mb-3">
+          <div class="col-4 ">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="static/img/SLD 1.Jpeg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="static/img/SLD 2.Jpeg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="static/img/SLD 3.Jpeg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-8 card-body m-0 p-1">
+            <h5 class="card-title">Card title</h5>
+            <div class="d-flex">
+              <p class="text-secondary"> 
+                <span class=" "> 07.03.2022 </span> |
+                <span class=" ">Uttarbedkashi, Koyra, Khulna </span> |
+                <span class=" "> Author </span>
+              </p>
+            </div>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+              Et, dolores consequatur neque qui odio est, debitis vel cupiditate quam, dolorum laboriosam corrupti. Porro dolore libero facilis, accusamus sed, ut dicta doloribus officiis accusantium consequatur recusandae iste omnis consequuntur suscipit fugiat delectus quam nemo reprehenderit molestiae blanditiis. Eligendi amet quas officiis dolor!
+            </p>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h6 class="accordion-header " id="flush-headingOne">
+                  <button class="accordion-button collapsed btn-sm btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse05" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Read More 
+                  </button>
+                </h6>
+                <div id="flush-collapse05" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. 
+                    This is the first item's accordion body.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
 
 
       <div class="container ">
-        
-
-
-        
-
-        <!-- Footer -->
-        <div class="mt-3 bg-primary text-white p-1 pt-3" id=" "> 
+      <!-- Footer -->
+        <div class="mt-3 bg-primary-color-undp text-white p-1 pt-3" id=" "> 
           <div class="container">
             <!-- UNDP logo & Name-->
             <div class="row " id=" ">
